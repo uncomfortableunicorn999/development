@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -27,7 +23,37 @@
 .App-link {
   color: #61dafb;
 }
+.Item-grid {
+  display: grid;
+  margin: 15px;
+  grid-gap: 30px;
+  grid-template-columns: 30rem 30rem;
+  grid-template-rows: 40rem 40rem 40rem 40rem 40rem 40rem;
+}
+.RecipeItem{
 
+  width: 30rem;
+    background-color: lightgray;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+.RecipeInfo{
+  display: flex;
+}
+.RecipeImage{
+  width: 30rem;
+  border-radius: 2rem;
+}
+.RecipePrice{
+  margin-right: 10px;
+}
+.MenuBar{
+  width:30rem;
+  height:60rem;
+  text-align: left;
+  margin: 3rem;
+  background-color: #bee0e9;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
