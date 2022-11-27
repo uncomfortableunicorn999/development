@@ -11,7 +11,7 @@ const Recipe = (props) => {
 
         <div class="RecipeItem">
             <div class="flex-row">
-                <img src={props.item.image} class="RecipeImage " />
+                <img src={props.item.image} class="RecipeImage " alt={props.item.name} />
             </div>
 
             <div class="flex-row">

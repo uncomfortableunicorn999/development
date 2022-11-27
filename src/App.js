@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from "react";
 import info from "./assets/info.json";
 import recipeData from "./assets/info.json";
-import { FormControl, FormLabel, RadioGroup, Radio, FormControlLabel, Checkbox, FormGroup, ListItemSecondaryAction } from '@material-ui/core';
+import { FormControl, FormLabel, RadioGroup, Radio, FormControlLabel, Checkbox, FormGroup, ListItemSecondaryAction , Button} from '@material-ui/core';
 
 import Recipe from './components/Recipe';
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
@@ -90,6 +90,11 @@ function App() {
       setAuthors({ ...authors, [event.target.id]: event.target.checked });
     };
 
+    const resetHandler = (event)=> {
+      setAuthors({sifton:false,seneviratne:false,ko:false,guy:false, boer:false, severson:false, nyt:false,hesser:false})
+      setTimes({tiem1:false,time2:false, time3:false,time4:false})
+
+    }
   
 
   const matchesTimeFilter = item =>{
@@ -252,10 +257,11 @@ return false
       }).map((item) => (<li>
                    {item}
                  </li>))}
-              {/* <FormLabel id="demo-radio-buttons-group-label">Filter By Bookmarks:</FormLabel>
               
-              <FormControlLabel control={<Checkbox checked={sifton} onChange={selectAuthorFilter} id={"sifton"} />} label="Sam Sifton" /> */}
               <p>Total time: {totalTime}</p>
+            </div>
+            <div>
+              <Button variant="contained" onClick={() => resetHandler()}>Reset</Button>
             </div>
 
             {/* <div>
