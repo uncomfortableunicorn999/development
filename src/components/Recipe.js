@@ -17,10 +17,10 @@ const Recipe = (props) => {
             <div class="flex-row">
                 <div>
                     <h2 class=" font-bold">{props.item.name}</h2>
-                    <p>{props.item.author}</p>
+                    <h5>{props.item.author}</h5>
                 </div>
                 <div class="flex items-center justify-between">
-                    <p>Time: {props.item.time} mins</p>
+                    <h5>Time: {props.item.time} mins</h5>
                     <div className="download-file">
                         <Checkbox
                             icon={<BookmarkBorderIcon />}

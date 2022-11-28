@@ -210,7 +210,7 @@ return false
         <aside class="MenuBar flex-row  ">
             <h1>Filter and Sort</h1>
 
-            <div>
+            <div >
               <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">Sort By:</FormLabel>
                 <RadioGroup
@@ -219,8 +219,8 @@ return false
                   name="radio-buttons-group">
                   
 
-                  <FormControlLabel value="alphabetical" control={<Radio />} label="alphabetical" />
-                  <FormControlLabel value="time" control={<Radio />} label="time to cook" />
+                  <FormControlLabel value="alphabetical" control={<Radio />} label={<span style={{ fontSize: '1.25rem' }}>Alphabetical</span>} />
+                  <FormControlLabel value="time" control={<Radio />} label={<span style={{ fontSize: '1.25rem' }}>Cook Time</span>}  />
                 </RadioGroup>
               </FormControl>
 
@@ -228,10 +228,10 @@ return false
             <div>
             <FormControl>
               <FormLabel id="demo-radio-buttons-group-label">Filter by Time:</FormLabel>
-              <FormControlLabel control={<Checkbox checked={time1} onChange={selectTimeFilter} id={"time1"}/>} label="< 1 hours" />
-              <FormControlLabel control={<Checkbox checked={time2} onChange={selectTimeFilter} id={"time2"}/>} label="1 - 2 hours" />
-              <FormControlLabel control={<Checkbox checked={time3} onChange={selectTimeFilter} id={"time3"}/>} label="2 - 3 hours" />
-              <FormControlLabel control={<Checkbox checked={time4} onChange={selectTimeFilter} id={"time4"}/>} label="3+ hours" />
+              <FormControlLabel label={<span style={{ fontSize: '1.25rem' }}>1 Hour or less</span>} control={<Checkbox checked={time1} onChange={selectTimeFilter} id={"time1"}/>} />
+              <FormControlLabel label={<span style={{ fontSize: '1.25rem' }}>1 - 2 Hours</span>}control={<Checkbox checked={time2} onChange={selectTimeFilter} id={"time2"}/>}  />
+              <FormControlLabel label={<span style={{ fontSize: '1.25rem' }}>2 - 3 Hours</span>}control={<Checkbox checked={time3} onChange={selectTimeFilter} id={"time3"}/>}  />
+              <FormControlLabel label={<span style={{ fontSize: '1.25rem' }}>3+ Hours</span>}control={<Checkbox checked={time4} onChange={selectTimeFilter} id={"time4"}/>} />
 
 
             </FormControl>
@@ -240,14 +240,14 @@ return false
             <FormControl>
               <FormLabel id="demo-radio-buttons-group-label">Filter By Author:</FormLabel>
               
-              <FormControlLabel control={<Checkbox checked={ko} onChange={selectAuthorFilter} id={"ko"}/>} label="Genevieve Ko" />
-              <FormControlLabel control={<Checkbox checked={guy} onChange={selectAuthorFilter} id={"guy"}/>} label="Jerrelle Guy" />
-              <FormControlLabel control={<Checkbox checked={boer} onChange={selectAuthorFilter} id={"boer"} />} label="Clare do Boer" />
-              <FormControlLabel control={<Checkbox checked={severson} onChange={selectAuthorFilter} id={"severson"} />} label="Kim Severson" />
-              <FormControlLabel control={<Checkbox checked={hesser} onChange={selectAuthorFilter} id={"hesser"} />} label="Amanda Hesser" />
-              <FormControlLabel control={<Checkbox checked={nyt} onChange={selectAuthorFilter} id={"nyt"} />} label="NYT" />
-              <FormControlLabel control={<Checkbox checked={seneviratne} onChange={selectAuthorFilter} id={"seneviratne"} />} label="Samantha Seneviratne" />
-              <FormControlLabel control={<Checkbox checked={sifton} onChange={selectAuthorFilter} id={"sifton"} />} label="Sam Sifton" />
+              <FormControlLabel control={<Checkbox checked={ko} onChange={selectAuthorFilter} id={"ko"}/>} label={<span style={{ fontSize: '1.25rem' }}>Genevieve Ko</span>} />
+              <FormControlLabel control={<Checkbox checked={guy} onChange={selectAuthorFilter} id={"guy"}/>} label={<span style={{ fontSize: '1.25rem' }}>Jerrelle Guy</span>} />
+              <FormControlLabel control={<Checkbox checked={boer} onChange={selectAuthorFilter} id={"boer"} />} label={<span style={{ fontSize: '1.25rem' }}>Clare do Boer</span>}/>
+              <FormControlLabel control={<Checkbox checked={severson} onChange={selectAuthorFilter} id={"severson"} />} label={<span style={{ fontSize: '1.25rem' }}>Kim Severson</span>} />
+              <FormControlLabel control={<Checkbox checked={hesser} onChange={selectAuthorFilter} id={"hesser"} />} label={<span style={{ fontSize: '1.25rem' }}> Amanda Hesser</span>} />
+              <FormControlLabel control={<Checkbox checked={nyt} onChange={selectAuthorFilter} id={"nyt"} />} label={<span style={{ fontSize: '1.25rem' }}>The New York Times</span>} />
+              <FormControlLabel control={<Checkbox checked={seneviratne} onChange={selectAuthorFilter} id={"seneviratne"} />} label={<span style={{ fontSize: '1.25rem' }}>Samantha Seneviratne</span>} />
+              <FormControlLabel control={<Checkbox checked={sifton} onChange={selectAuthorFilter} id={"sifton"} />} label={<span style={{ fontSize: '1.25rem' }}>Sam Sifton</span>} />
             </FormControl>
             </div> }
             <div>
