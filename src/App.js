@@ -92,7 +92,14 @@ function App() {
 
     const resetHandler = (event)=> {
       setAuthors({sifton:false,seneviratne:false,ko:false,guy:false, boer:false, severson:false, nyt:false,hesser:false})
-      setTimes({tiem1:false,time2:false, time3:false,time4:false})
+      setTimes({time1:false,time2:false, time3:false,time4:false})
+      setBookmarks({"Apple Pear Galette With Apple Cider Caramel":false,"Apple Pie":false,
+    "Chocolate Caramel Tart":false,"Cranberry Lemon Meringue Pie":false,
+    "Chocolate Peanut Butter Pie":false,"Sweet Potato Casserole Pie":false,
+    "Creme Brulee Pie":false, "Dolester Miles's Lemon Meringue Tart":false,
+    "Mississippi Mud Pie":false,"Hazelnut, Pear and Cardamom Tart":false,
+    "Pecan Sandie Pie":false,"Pumpkin Pie":false})
+    setTotal(0)
 
     }
   
