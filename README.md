@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+If you used the stencil code, this is `https://uncomfortableunicorn999.github.io/development/`
 
 ### Goal and Value of the Application
 This is a dashboard for viewing your favorite NYT cooking pies for thanksgiving. It is valuable to the user because NYT doesnt allow you to sort based on time or alphabetically which is annoying as a user.
